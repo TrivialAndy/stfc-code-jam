@@ -36,7 +36,7 @@ Good challenges for the monthly code jam have as many of these qualities as poss
 
 ### I want to write some starter code
 
-Using starter code saves everyone from spending valuable time individually writing the same input/output functions during the code jam. Anyone can write starter code and submit it as a PR to this repository. Please name the script file `starter` and place it in the folder for that date, e.g. `2022-04-25/starter.py` (create the folder if you need to).
+Using starter code saves everyone from spending valuable time individually writing the same input/output functions during the code jam. Anyone can write starter code and submit it as a PR to this repository. Please name the script file `starter` and place it in the folder for that date, e.g. `2022-04-25/starter.py` (create the folder if you need to). You can also post the code on Slack if you aren't comfortable using GitHub.
 
 Starter code should take the input for a challenge and read it into a useful data structure. If the challenge requires output to be in a specific format, the starter code should also provide a function for this. You, as the author of the starter code, can decide what data structures make the most sense for the challenge and your functions.
 
