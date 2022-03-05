@@ -5,10 +5,10 @@ def parse_input(filename: str) -> list:
     Reads input from file for KickStart 2020
 
     T: num of test cases to follow
-    N K P
-    N: Number of stacks
-    K: Number of plates in each stack
-    P: Max number of plates
+    N K P:
+        N: Number of stacks
+        K: Number of plates in each stack
+        P: Max number of plates
     N lines:
         beauty values
     
@@ -51,7 +51,7 @@ def compare_result(truth_outfile: str, test_outfile: str) -> None:
     Use for testing new algorithms
     truth_outfile str: The known correct answers
     test_outfile str: The user generated answer file
-    returns: None.
+    returns: None
         Prints mis-matches lines to stdout
     """
     truth = open(truth_outfile, "r")
@@ -100,5 +100,4 @@ def calculate_beauty(data: list) -> list:
 
 if __name__ == "__main__":
     main()
-            
 
