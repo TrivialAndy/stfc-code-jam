@@ -2,7 +2,7 @@
 
 def parse_input(filename: str) -> list:
     """
-    Reads input from file for KickStart 2020
+    Reads input from file for KickStart 2020 round A
 
     T: num of test cases to follow
     N K P:
@@ -31,14 +31,14 @@ def parse_input(filename: str) -> list:
     return test_cases
 
 
-def write_output(filename: str, beauty_values: list) -> None:
+def write_output(filename: str, values: list) -> None:
     """
-    Writes the beauty data to file in correct format for KickStart 2020
+    Writes the data to file in correct format for KickStart 2020 round B
 
     filename str: Name of file to write output to
-    beauty_values list[int]: List of sum of the top P beauty values for each test case
+    values list[int]: List of sum of the top P beauty values for each test case
     """
-    out_txt = [f"Case #{x+1}: {y}" for x, y in enumerate(beauty_values)]
+    out_txt = [f"Case #{x+1}: {y}" for x, y in enumerate(values)]
     print("Output writing to file:")
     print("\n".join(out_txt))
     with open(filename, "w") as f:
@@ -71,31 +71,31 @@ def compare_result(truth_outfile: str, test_outfile: str) -> None:
 
 def main() -> None:
     """
-    To use, replace the file names and insert code to calculate beauty into calculate_beauty()
+    To use, replace the file names and insert code to calculate beauty into calculate_result()
     """
     #########
     in_filename = "data/sample_test_set_1/sample_ts1_input.txt"
     truth_result_filename = "data/sample_test_set_1/sample_ts1_output.txt"
-    out_filename = "beauty.out"
+    out_filename = "sample_test_set_1.out"
     #########
     data = parse_input(in_filename)
-    beauty = calculate_beauty(data)
-    write_output(out_filename, beauty)
+    result = calculate_result(data)
+    write_output(out_filename, result)
     compare_result(truth_result_filename, out_filename)
 
 
-def example_calculate_beauty(data: list) -> list:
-    """Simple function for testing - Takes top plate from each stack"""
-    example_beauty_output = []
+def example_calculate_result(data: list) -> list:
+    """Simple function for testing"""
+    example_output = []
     for tokens, stacks in data:
-        example_beauty_output.append(sum(s[-1] for s in stacks))
-    return example_beauty_output
+        example_output.append(sum(s[-1] for s in stacks))
+    return example_output
 
 
-def calculate_beauty(data: list) -> list:
-    """Add custom beauty algorithm here"""
-    beauty_list = example_calculate_beauty(data)
-    return beauty_list 
+def calculate_result(data: list) -> list:
+    """Add custom algorithm here"""
+    result = example_calculate_result(data)
+    return result 
 
 
 if __name__ == "__main__":
