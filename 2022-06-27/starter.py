@@ -24,7 +24,7 @@ def parse_input(filename: str) -> list:
 
 def write_output(filename: str, values: list) -> None:
     """
-    Writes the data to file in correct format for KickStart 2020 round B
+    Writes the data to file in a generic format for Google Kickstarter
     filename str: Name of file to write output to
     values list[tuple(int, int)]: Final rover positions
     """
