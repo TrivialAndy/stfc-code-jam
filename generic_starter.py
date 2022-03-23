@@ -19,8 +19,8 @@ def parse_input(filename: str) -> list:
 def write_output(filename: str, values: list) -> None:
     """
     Writes the data to file in a generic format for Google Kickstarter
-    filename str: Name of file to write output to
-    values list[tuple(int, int)]: Final rover positions
+    filename str: Name of file to write output
+    values list: Solution from calculate_result()
     """
     out_txt = [f"Case #{i+1}: {y}" for i, y in enumerate(values)]
     print("Output writing to file:")
