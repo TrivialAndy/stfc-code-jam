@@ -23,7 +23,7 @@ def write_output(filename: str, values: list) -> None:
     """
     Writes the data to file in a generic format for Google Kickstarter
     filename str: Name of file to write output to
-    values list[tuple(int, int)]: Final rover positions
+    values list[float]: Probability rover does not fall in the hole
     """
     out_txt = [f"Case #{i+1}: {y}" for i, y in enumerate(values)]
     print("Output writing to file:")
