@@ -42,6 +42,6 @@ Starter code should take the input for a challenge and read it into a useful dat
 
 If the starter code is long or complex, please include comments or type hints to make clear how the code should be used.
 
-The preferred language is Python, as most attendees are familiar with this. Python starter code should be compatible with version 3.7+.
+The preferred language is Python, as most attendees are familiar with this. Python starter code should be compatible with version 3.7+. You can use the [generic_starter.py](generic_starter.py) file as a template.
 
 
